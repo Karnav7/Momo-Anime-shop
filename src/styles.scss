@@ -1,1 +1,184 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import "~material-design-icons/iconfont/material-icons.css";
+
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-grey);
+// $my-app-light: mat-palette($mat-grey, 300);
+// $my-app-accent: mat-palette($mat-cyan, A200, A100, A400);
+$my-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+$my-app-warn:    mat-palette($mat-red);
+
+$my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+
+$primary-color-dark: #000000;
+$primary-color-light: #616161;
+$primary-color: #424242;
+$success: #4caf50;
+$faint-color: #e0e0e0;
+$accent-color: #26c6da;
+$disable-color: #757575;
+$special-btn-color: #673ab7;
+$special-icon-color: #ffea00;
+
+
+body {
+    padding: 0; 
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    // height: 100%;
+    // display: flex;
+    // height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow: visible;
+
+    @media screen and (min-width: 1225px){
+        // overflow: hidden; // disable vertical scrolling
+        height: 100vh;
+    }
+
+    @media (min-width: 481px) and (max-width: 900px) and (orientation: portrait) {
+        // overflow: hidden; // disable vertical scrolling
+        height: 100vh;
+    }
+
+    @media (min-width: 824px) and (max-width: 1024px) and (orientation: landscape) {
+        // overflow: hidden; // disable vertical scrolling
+        height: 100vh;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+        // overflow: hidden; // disable vertical scrolling
+        height: 100%;
+        // overflow-y: none;
+    }
+
+    @media (min-width: 481px) and (max-width: 823px) and (orientation:landscape) {
+        // overflow: hidden; // disable vertical scrolling
+        height: 100%;
+        // overflow-y: auto;
+    }
+}
+
+.flex-spacer {
+    flex: 1 1 auto;
+}
+
+.background-primary {
+    background-color: $primary-color;
+}
+
+.background-primary-dark {
+    background-color: $primary-color-dark!important;
+}
+
+.background-primary-light {
+    background-color: $primary-color-light!important;
+}
+
+.background-faint {
+    background-color: $faint-color!important;
+}
+
+.background-accent {
+    background-color: $accent-color!important;
+}
+
+.background-special {
+    background-color: $special-btn-color!important;
+}
+
+.background-yellow {
+    background-color: $special-icon-color!important;
+}
+
+.background-white {
+    background-color: floralwhite!important;
+}
+
+
+// .background-disabled-color {
+//     color: $disable-color!important;
+// } 
+
+.border-primary {
+    border: 1px solid $primary-color;
+}
+
+.border-primary-light {
+    border: 1px solid $primary-color-light;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.primary-light-color {
+    color: $primary-color-light;
+}
+
+.primary-dark-color {
+    color: $primary-color-dark;
+}
+
+.special-color {
+    color: $special-icon-color!important;
+}
+
+.background-success {
+    background-color: $success!important;
+}
+
+.text-warn {
+    color: #f44336!important;
+}
+
+.background-warn {
+    background-color: #f44336!important;
+}
+
+.success {
+    color: $success;
+}
+
+// .background-accent {
+//     background-color: $my-app-accent!important;
+// }
+
+.text-floral-white {
+    color: floralwhite!important;
+}
+
+.text-primary-dark {
+    color: $primary-color-dark!important;
+}
+
+.text-primary {
+    color: $primary-color!important;
+}
+
+// .flex-spacer {
+//     flex: 1 1 auto;
+// }
+
+.overflow {
+    overflow-y: auto;
+    overflow: visible;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.rounded-corners {
+    border-radius: 25px;
+}

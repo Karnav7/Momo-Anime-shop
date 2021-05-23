@@ -1,0 +1,39 @@
+<mat-toolbar id="header">
+    <mat-toolbar-row class="background-primary-dark">
+        <span>Momo Anime</span>
+        <span class="flex-spacer"></span>
+        <mat-form-field appearance="outline" style="font-size: 11px;margin-top: 15px;">
+            <mat-label>Search Store</mat-label>
+            <input matInput placeholder="Search...">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <button mat-icon-button>
+            <mat-icon>favorite_border</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>person</mat-icon>
+        </button>
+        <button mat-icon-button color="accent">
+            <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row class="background-primary" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <button mat-button>
+            New Releases
+        </button>
+
+        <button mat-button>
+            Clothing
+        </button>
+
+        <button mat-button>
+            Accessories
+        </button>
+
+        <button mat-button color="accent">
+            Sale
+        </button>
+    </mat-toolbar-row>
+    
+</mat-toolbar>
