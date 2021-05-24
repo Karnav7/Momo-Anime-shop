@@ -21,18 +21,21 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RestangularModule, Restangular } from 'ngx-restangular';
+// import { RestangularModule, Restangular } from 'ngx-restangular';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { NewReleaseComponent } from './new-release/new-release.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewReleaseComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,8 @@ import { HeaderComponent } from './header/header.component';
     MatIconModule, MatExpansionModule, MatCheckboxModule, MatSidenavModule, MatListModule, MatProgressBarModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
+    // Restangular, RestangularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

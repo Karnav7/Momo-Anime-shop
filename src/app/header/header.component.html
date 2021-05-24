@@ -1,8 +1,16 @@
 <mat-toolbar id="header">
-    <mat-toolbar-row class="background-primary-dark">
-        <span>Momo Anime</span>
+    <mat-toolbar-row class="background-primary-dark" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <button mat-button routerLink="home">
+            <span style="font-family:Sofia, sans-serif; font-size: 25px;">Momo Aniverse</span>
+        </button>
+        
+
+        <div id="headerGif">
+            
+        </div>
+
         <span class="flex-spacer"></span>
-        <mat-form-field appearance="outline" style="font-size: 11px;margin-top: 15px;">
+        <mat-form-field id="headerSearch" appearance="outline" style="font-size: 11px;">
             <mat-label>Search Store</mat-label>
             <input matInput placeholder="Search...">
             <mat-icon matSuffix>search</mat-icon>
@@ -19,7 +27,7 @@
     </mat-toolbar-row>
 
     <mat-toolbar-row class="background-primary" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-        <button mat-button>
+        <button mat-button routerLink="new-release">
             New Releases
         </button>
 

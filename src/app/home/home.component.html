@@ -1,17 +1,17 @@
 <div fxLayout="row" fxLayoutAlign="none center" id="marquee" class="background-primary-light">
-    <marquee class="text-floral-white">In-stock shipments are delayed due to COVID-19. For free shipping in US use code FREESHIP</marquee>
+    <marquee class="text-floral-white">In-stock shipments are delayed due to COVID-19. For free shipping in U.S. use code FREESHIP</marquee>
 </div>
 
-<div fxLayout="column" fxLayoutAlgin="center top" fxLayoutGap="10px">
+<div fxLayout="column" style="width: 100%;margin-top: 20px;" fxLayoutAlgin="center top" fxLayoutGap="30px">
     <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
 
-        <mat-card id="home-banner" class="rounded-corners background-white">
+        <mat-card id="home-banner" style="border-radius: 25px;" class="background-white">
             <mat-card-content>
-                <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
 
                     <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
                         <span style="color: black; font-size: 65px; font-weight: bold;">
-                            Free Shipping in US!
+                            Free Shipping in United States!
                         </span>
                     </div>
 
@@ -29,12 +29,138 @@
 
                     <div fxLayout="row" fxLayoutAllign="center center">
                         <span style="color: black; font-size: 20px;">
-                            In-stock items will be held until June 30<sup>th</sup> before processing for the shipment. Offer valid for US shipments only.
+                            In-stock items will be held until June 30<sup>th</sup> before processing for the shipment. Offer valid for U.S. shipments only.
                         </span>
                     </div>
                 </div>
             </mat-card-content>
         </mat-card>
+    </div>
+
+
+    <div id="grid-container" fxLayout="row" fxLayoutAlgin="center center">
+        <div fxLayout="column" style="width: 100%" fxLayoutAlign="center center" fxLayoutGap="15px">
+
+            <div fxLayout="row" style="width: 100%;" fxLayoutAlign="center center" fxLayoutGap="15px">
+
+                <div id="card11" class="home-card card-shadow-effect">
+
+                </div>
+
+                <div id="card12" class="home-card card-shadow-effect">
+
+                </div>
+
+                <div id="card13" class="home-card card-shadow-effect">
+
+                </div>
+            </div>
+
+            <div fxLayout="row" style="width: 100%;" fxLayoutAlign="center center" fxLayoutGap="15px">
+
+                <div id="card21" class="home-card card-shadow-effect">
+
+                </div>
+
+                <div id="card22" class="home-card card-shadow-effect">
+
+                </div>
+
+                <div id="card23" class="home-card card-shadow-effect">
+                    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" style="margin-top: 30px;">
+                        <span class="text-floral-white" style="font-size: 30px; font-weight: bold;">CLEARANCE SALE!</span>
+                        <span class="text-floral-white" style="font-size: 15px;font-weight: bold;">UPTO</span>
+                        <span class="text-floral-white" style="font-size: 60px;font-weight: bold;">50%</span>
+                        <span class="text-floral-white" style="font-size: 60px;font-weight: bold;">OFF!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div fxLayout="row" style="width: 100%;" fxLayoutAlign="center center" fxLayoutGap="15px">
+
+                <div id="card31" class="home-card card-shadow-effect">
+
+                </div>
+
+                <div id="card32" class="home-card card-shadow-effect">
+
+                </div>
+
+                <div id="card33" class="home-card card-shadow-effect">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center">
+
+        <div id="socialCard">
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <span style="font-size: 35px; margin-top: 40px;color: floralwhite!important;"> Follow us on Social Media </span>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px" style="margin-top: 30px;">
+                <button mat-icon-button>
+                    <fa-icon style="font-size: 50px; color: floralwhite!important;" [icon]="facebook"></fa-icon>
+                </button>
+
+                <button mat-icon-button>
+                    <fa-icon style="font-size: 50px; color: floralwhite!important;" [icon]="twitter"></fa-icon>
+                </button>
+
+                <button mat-icon-button>
+                    <fa-icon style="font-size: 50px; color: floralwhite!important;" [icon]="insta"></fa-icon>
+                </button>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="center center" style="margin-top: 45px;">
+                <span style="font-size: 30px; color: floralwhite!important;">
+                    For more exciting offers, subscribe to our mailing list.
+                </span>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px" style="margin-top: 20px;">
+                <mat-form-field id="homeEmailtxtbx" appearance="outline" style="font-size: 12px;">
+                    <mat-label>Email Address</mat-label>
+                    <input matInput placeholder="Enter Email Address...">
+                </mat-form-field>
+
+                <button mat-raised-button color="accent">
+                    Subscribe
+                </button>
+            </div> 
+        </div>
+    </div>
+
+    <div style="width: 100%" fxLayout="row" fxLayoutAlign="center top">
+
+        <div id="footer" class="background-primary-dark" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+
+            <div id="footerLinks" style="width: 100%;" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="60px">
+
+                <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="5px">
+                    <span style="color: burlywood; font-weight: bold;">HELP & CUSTOMER SERVICE</span>
+                    <span class="text-floral-white" >FAQ</span>
+                    <span class="text-floral-white">Delayed Pre-Orders List</span>
+                    <span class="text-floral-white">Shipping & Returns</span>
+                    <span class="text-floral-white">Contact Us</span>
+                    <span class="text-floral-white">About Us</span>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="5px">
+                    <span style="color: burlywood;font-weight: bold;">HELPFUL LINKS</span>
+                    <span class="text-floral-white">Copyright Policy</span>
+                    <span class="text-floral-white">Privacy Policy</span>
+                    <span class="text-floral-white">Terms of Service</span>
+                    <span class="text-floral-white">Become a premium member</span>
+                </div>
+            </div>
+
+            <div id="copyrightRow" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" >
+                <span class="text-floral-white">Copyright &#169; 2021, Karnav Shah</span>
+            </div>
+        </div>
     </div>
 </div>
 

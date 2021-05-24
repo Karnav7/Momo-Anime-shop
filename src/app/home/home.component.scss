@@ -3,6 +3,110 @@
 }
 
 #home-banner {
+
+    background: url("/assets/images/home/unnamed.png")no-repeat center center fixed;
+    background-size: cover;
+
     width: 95%;
     margin-top: 10px;
+}
+
+.home-card {
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.card-shadow-effect {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-shadow-effect:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#grid-container {
+    width: 100%;
+}
+
+#socialCard {
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 25px;
+    margin-top: 20px;
+    background: url("/assets/images/home/nezuko-kamado.jpg")no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+
+    width: 95%;
+    height: 350px;
+    
+}
+
+#homeEmailtxtbx {
+    margin-top: 12px;
+}
+
+#footer {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 30px;
+}
+
+#card11 {
+    background: url("/assets/images/home/levi-Tshirt.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#card12 {
+    background: url("/assets/images/home/keyvisual.jpg")no-repeat left center;
+    background-size: cover;
+}
+
+#card13 {
+    background: url("/assets/images/home/demon-slayer-accesories.webp")no-repeat center center;
+    background-size: cover;
+}
+
+#card21 {
+    background: url("/assets/images/home/itachi-Tshirt.png")no-repeat center center;
+    background-size: cover;
+}
+
+#card22 {
+    background: url("/assets/images/home/aot-accesories.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#card23 {
+    background: url("/assets/images/home/blue_background.png")no-repeat center center;
+    background-size: cover;
+}
+
+#card31 {
+    background: url("/assets/images/home/nezuko-Tshirt.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#card32 {
+    background: url("/assets/images/home/pokemon-dragonite.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#card33 {
+    background: url("/assets/images/home/nezuko.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#footerLinks {
+    margin-top: 20px;
+}
+
+#copyrightRow {
+    margin-bottom: 15px;
 }
